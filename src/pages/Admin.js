@@ -3,16 +3,24 @@ import React, { useState } from "react";
 function Admin(){
     const [time, setTime] = useState("");
     const [temp, setTemp] = useState(0);
-    const [clouds, setClouds] = useState("");
+    const [clouds, setClouds] = useState("clear");
     const [precip, setPrecip] = useState(false);
 
-    function handleClouds(){};
+    function handleClouds(e){
+        setClouds(e.target.value)
+    };
 
-    function handleTemp(){};
+    function handleTemp(e){
+        setTemp(e.target.value)
+    };
 
-    function handleTime(){};
+    function handleTime(e){
+        setTime(e.target.value)
+    };
 
-    function hanldePrecip(){};
+    function hanldePrecip(e){
+        setPrecip((precip) => !precip)
+    };
 
     return(
         <div>
@@ -34,7 +42,8 @@ function Admin(){
                         id="temp"
                         type="number"
                         name="temp"
-                        value={temp}
+                        min={-10}
+                        max={150}
                         onChange={handleTemp}
                     />
                 </div>
