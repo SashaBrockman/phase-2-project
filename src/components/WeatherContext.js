@@ -1,8 +1,8 @@
-import { useContext, useEffect, useState } from 'react';
+import { createContext, useEffect, useState } from 'react';
 
-const WeatherContext = useContext();
+const WeatherContext = createContext();
 
-function WeatherProvider(){
+function WeatherProvider({ children }){
     const [weather, setWeather] = useState([]);
     const forecast = {
         weather: weather,
