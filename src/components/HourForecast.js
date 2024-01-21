@@ -6,9 +6,9 @@ function HourForecast({ hour }){
     return(
         <li class="hour">
             <h2>{hour.time}</h2>
-            <p>{hour.temp}</p>
-            <p>{hour.clouds}</p>
-            <p>{hour.precip ? "Rain" : "No rain"}</p>
+            <p>Temperature: {hour.temp} degrees</p>
+            <p>Cloud cover: {hour.clouds}</p>
+            <p>{hour.precip ? "Chance of rain" : "Rain unlikely"}</p>
         </li>
     )
 }
