@@ -4,7 +4,10 @@ const WeatherContext = useContext();
 
 function WeatherProvider(){
     const [weather, setWeather] = useState([]);
-    const forecast = [weather, setWeather];
+    const forecast = {
+        weather: weather,
+        setWeather: setWeather
+    };
 
     useEffect(() => {
         fetch("http://localhost:3000/weather")
