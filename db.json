@@ -1,0 +1,59 @@
+{
+    "weather": [
+        {
+            "id": 0,
+            "temp": 25,
+            "cloud-cover": "partial",
+            "precip": false
+        },
+        {
+            "id": 1,
+            "temp": 26,
+            "cloud-cover": "partial",
+            "precip": false
+        },
+        {
+            "id": 2,
+            "temp": 27,
+            "cloud-cover": "partial",
+            "precip": false
+        },
+        {
+            "id": 3,
+            "temp": 29,
+            "cloud-cover": "partial",
+            "precip": false
+        },
+        {
+            "id": 4,
+            "temp": 31,
+            "cloud-cover": "partial",
+            "precip": false
+        },
+        {
+            "id": 5,
+            "temp": 32,
+            "cloud-cover": "cloudy",
+            "precip": false
+        },
+        {
+            "id": 6,
+            "temp": 33,
+            "cloud-cover": "cloudy",
+            "precip": true
+        },
+        {
+            "id": 7,
+            "temp": 33,
+            "cloud-cover": "partial",
+            "precip": true
+        },
+        {
+            "id": 8,
+            "temp": 32,
+            "cloud-cover": "clear",
+            "precip": false
+        }
+    ]
+    
+}
