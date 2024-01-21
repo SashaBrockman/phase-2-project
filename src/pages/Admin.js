@@ -6,6 +6,14 @@ function Admin(){
     const [clouds, setClouds] = useState("");
     const [precip, setPrecip] = useState(false);
 
+    function handleClouds(){};
+
+    function handleTemp(){};
+
+    function handleTime(){};
+
+    function hanldePrecip(){};
+
     return(
         <div>
             <h1>Admin</h1>

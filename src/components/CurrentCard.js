@@ -1,6 +1,8 @@
 import React from "react";
 
 function CurrentCard({current}){
+    if(typeof current === "undefined") return <h2>Loading</h2>
+
     return(
         <div className="current">
             <h2>{current.time}</h2>
