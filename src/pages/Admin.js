@@ -18,14 +18,34 @@ function Admin(){
         setTime(e.target.value)
     };
 
-    function hanldePrecip(e){
+    function hanldePrecip(){
         setPrecip((precip) => !precip)
     };
+
+    function handleSubmit(e){
+        e.preventDefault();
+        const newForecast = {
+            time: time,
+            temp: temp,
+            clouds: clouds,
+            precip: precip
+        };
+
+        fetch("http://localhost:3000/weather",{
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(newForecast)
+        })
+        .then(r => r.json())
+        .then(r => console.log(r))
+    }
 
     return(
         <div>
             <h1>Admin</h1>
-            <form>
+            <form onSubmit={handleSubmit}>
                 <label for="time">Time: </label>
                 <div>
                     <input 
