@@ -1,6 +1,8 @@
 import React from "react";
 
 function HourForecast({ hour }){
+    if(typeof hour === "undefined") return <h2>Loading</h2>
+
     return(
         <li class="hour">
             <h2>{hour.time}</h2>

@@ -7,7 +7,7 @@ function HourByHour(){
     const {weather} = useContext(WeatherContext);
 
     const hourList = weather.map((hour) => {
-        return <HourForecast value={hour} key={hour.id}/>
+        return <HourForecast hour={hour} key={hour.id}/>
     })
 
     return(
