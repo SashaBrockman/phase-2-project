@@ -9,8 +9,8 @@ function App() {
   return (
     <>
       <h1>Welcome</h1>
-      <Admin></Admin>
       <WeatherProvider>
+        <Admin/>
         <CurrentWeather/>
         <HourByHour/>
       </WeatherProvider>

@@ -69,6 +69,20 @@
       "temp": "38",
       "clouds": "clear",
       "precip": true
+    },
+    {
+      "id": "4a3d",
+      "time": "5:00 p.m.",
+      "temp": "24",
+      "clouds": "cloudy",
+      "precip": true
+    },
+    {
+      "id": "0582",
+      "time": "6:00 p.m.",
+      "temp": "33",
+      "clouds": "partial",
+      "precip": false
     }
   ]
 }

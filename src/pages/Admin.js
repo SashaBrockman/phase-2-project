@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import { WeatherContext } from "../components/WeatherContext";
 
 function Admin(){
     const [time, setTime] = useState("");
     const [temp, setTemp] = useState(0);
     const [clouds, setClouds] = useState("clear");
     const [precip, setPrecip] = useState(false);
+    const {setWeather} = useContext(WeatherContext)
 
     function handleClouds(e){
         setClouds(e.target.value)
@@ -40,6 +42,12 @@ function Admin(){
         })
         .then(r => r.json())
         .then(r => console.log(r))
+
+        setWeather((weather) => [...weather, newForecast])
+        setTime("")
+        setClouds("clear")
+        setPrecip(false)
+        setTemp(0)
     }
 
     return(
