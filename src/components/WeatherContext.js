@@ -1,4 +1,4 @@
-const { useContext, useEffect, useState } = require("react")
+import { useContext, useEffect, useState } from 'react'
 
 const WeatherContext = useContext();
 
