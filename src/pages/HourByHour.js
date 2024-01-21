@@ -1,14 +1,20 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext } from "react";
 import { WeatherContext } from "../components/WeatherContext";
+import HourForecast from "../components/HourForecast";
 
 
 function HourByHour(){
-    const [weather, setWeather] = useState([])
+    const {weather} = useContext(WeatherContext);
 
-    useEffect(() => {
-        newWeather = useContext(WeatherContext);
-        setWeather(newWeather)
+    const hourList = weather.map((hour) => {
+        return <HourForecast value={hour} key={hour.id}/>
     })
 
-    return();
+    return(
+        <ul>
+            {hourList}
+        </ul>
+    );
 }
+
+export default HourByHour;
