@@ -1,5 +1,9 @@
-
+import React from "react";
 
 function CurrentWeather(){
-    return()
+    
+    
+    return();
 }
+
+export default CurrentWeather;
