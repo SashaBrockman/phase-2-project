@@ -1,13 +1,13 @@
 import { WeatherProvider } from './components/WeatherContext';
-import HourByHour from './pages/HourByHour';
-import CurrentWeather from './pages/CurrentWeather';
-import Admin from './pages/Admin';
 import { Outlet } from 'react-router-dom';
+import NavBar from './components/NavBar';
 
 function App() {
   return (
     <>
-      <h1>Welcome</h1>
+      <header>
+        <NavBar/>
+      </header>
       <WeatherProvider>
         <Outlet/>
       </WeatherProvider>
