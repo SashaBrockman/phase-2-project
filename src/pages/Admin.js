@@ -54,7 +54,7 @@ function Admin(){
         <div>
             <h1>Admin</h1>
             <form onSubmit={handleSubmit}>
-                <label for="time">Time: </label>
+                <label htmlFor="time">Time: </label>
                 <div>
                     <input 
                         id="time"
@@ -64,7 +64,7 @@ function Admin(){
                         onChange={handleTime}
                     />
                 </div>
-                <label for="temp">Temperature: </label>
+                <label htmlFor="temp">Temperature: </label>
                 <div>
                     <input
                         id="temp"
@@ -75,7 +75,7 @@ function Admin(){
                         onChange={handleTemp}
                     />
                 </div>
-                <label for="clouds">Cloud cover: </label>
+                <label htmlFor="clouds">Cloud cover: </label>
                 <div>
                     <select id="clouds" name="clouds" onChange={handleClouds}>
                         <option value="clear">Clear</option>
@@ -83,7 +83,7 @@ function Admin(){
                         <option value="cloudy">Cloudy</option>
                     </select>
                 </div>
-                <label for="precip">Rain chance: </label>
+                <label htmlFor="precip">Rain chance: </label>
                 <div>
                     <input 
                         id="precip"
