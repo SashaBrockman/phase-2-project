@@ -1,87 +1,66 @@
 {
   "weather": [
     {
-      "id": 0,
+      "id": 1,
       "time": "7:00 a.m.",
       "temp": 25,
       "clouds": "partial",
       "precip": false
     },
     {
-      "id": 1,
+      "id": 2,
       "time": "8:00 a.m.",
       "temp": 26,
       "clouds": "partial",
       "precip": false
     },
     {
-      "id": 2,
+      "id": 3,
       "time": "9:00 a.m.",
       "temp": 27,
       "clouds": "partial",
       "precip": false
     },
     {
-      "id": 3,
+      "id": 4,
       "time": "10:00 a.m.",
       "temp": 29,
       "clouds": "partial",
       "precip": false
     },
     {
-      "id": 4,
+      "id": 5,
       "time": "11:00 a.m.",
       "temp": 31,
       "clouds": "partial",
       "precip": false
     },
     {
-      "id": 5,
+      "id": 6,
       "time": "12:00 p.m.",
       "temp": 32,
       "clouds": "cloudy",
       "precip": false
     },
     {
-      "id": 6,
+      "id": 7,
       "time": "1:00 p.m.",
       "temp": 33,
       "clouds": "cloudy",
       "precip": true
     },
     {
-      "id": 7,
+      "id": 8,
       "time": "2:00 p.m.",
       "temp": 33,
       "clouds": "partial",
       "precip": true
     },
     {
-      "id": 8,
+      "id": 9,
       "time": "3:00 p.m.",
       "temp": 32,
       "clouds": "clear",
-      "precip": false
-    },
-    {
-      "id": "501c",
-      "time": "4:00 p.m.",
-      "temp": "38",
-      "clouds": "clear",
-      "precip": true
-    },
-    {
-      "id": "4a3d",
-      "time": "5:00 p.m.",
-      "temp": "24",
-      "clouds": "cloudy",
-      "precip": true
-    },
-    {
-      "id": "0582",
-      "time": "6:00 p.m.",
-      "temp": "33",
-      "clouds": "partial",
       "precip": false
     }
   ]
