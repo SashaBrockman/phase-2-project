@@ -6,7 +6,7 @@ function Admin(){
     const [temp, setTemp] = useState(0);
     const [clouds, setClouds] = useState("clear");
     const [precip, setPrecip] = useState(false);
-    const {setWeather} = useContext(WeatherContext)
+    const {weather, setWeather} = useContext(WeatherContext)
 
     function handleClouds(e){
         setClouds(e.target.value)
@@ -23,6 +23,16 @@ function Admin(){
     function hanldePrecip(){
         setPrecip((precip) => !precip)
     };
+
+    function handleWeather(newForecast){
+        const newWeather = [...weather, newForecast];
+        setWeather(newWeather)
+
+        setTime("")
+        setClouds("clear")
+        setPrecip(false)
+        setTemp(0)
+    }
 
     function handleSubmit(e){
         e.preventDefault();
@@ -41,13 +51,7 @@ function Admin(){
             body: JSON.stringify(newForecast)
         })
         .then(r => r.json())
-        .then(r => console.log(r))
-
-        setWeather((weather) => [...weather, newForecast])
-        setTime("")
-        setClouds("clear")
-        setPrecip(false)
-        setTemp(0)
+        .then(r => handleWeather(r))
     }
 
     return(
