@@ -1,5 +1,6 @@
 import React, { useContext, useState } from "react";
 import { WeatherContext } from "../components/WeatherContext";
+import "./Admin.css"
 
 function Admin(){
     const [time, setTime] = useState("");
@@ -105,7 +106,9 @@ function Admin(){
                         />
                     </div>
                 </div>
-                <button type="submit" className="button">Add forecast</button>
+                <div className="button">
+                    <button type="submit" >Add forecast</button>
+                </div>
             </form>
         </div>
     );
