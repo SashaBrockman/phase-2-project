@@ -55,49 +55,57 @@ function Admin(){
     }
 
     return(
-        <div>
-            <h1>Admin</h1>
+        <div className="admin-form">
+            <h1 style={{textAlign: "center"}}>Add New Forecast</h1>
             <form onSubmit={handleSubmit}>
-                <label htmlFor="time">Time {"(include a.m. or p.m.)"}: </label>
-                <div>
-                    <input 
-                        id="time"
-                        type="text"
-                        name="time"
-                        value={time}
-                        onChange={handleTime}
-                    />
+                <div className="input">
+                    <label htmlFor="time">Time {"(include a.m. or p.m.)"}: </label>
+                    <div>
+                        <input 
+                            id="time"
+                            type="text"
+                            name="time"
+                            value={time}
+                            onChange={handleTime}
+                        />
+                    </div>
                 </div>
-                <label htmlFor="temp">Temperature {"(in degrees Fahrenheit)"}: </label>
-                <div>
-                    <input
-                        id="temp"
-                        type="number"
-                        name="temp"
-                        min={-10}
-                        max={150}
-                        onChange={handleTemp}
-                    />
+                <div className="input">
+                    <label htmlFor="temp">Temperature {"(in degrees Fahrenheit)"}: </label>
+                    <div>
+                        <input
+                            id="temp"
+                            type="number"
+                            name="temp"
+                            min={-10}
+                            max={150}
+                            onChange={handleTemp}
+                        />
+                    </div>
                 </div>
-                <label htmlFor="clouds">Cloud cover: </label>
-                <div>
-                    <select id="clouds" name="clouds" onChange={handleClouds}>
-                        <option value="clear">Clear</option>
-                        <option value="partial">Partially Cloudy</option>
-                        <option value="cloudy">Cloudy</option>
-                    </select>
+                <div className="input">
+                    <label htmlFor="clouds">Cloud cover: </label>
+                    <div>
+                        <select id="clouds" name="clouds" onChange={handleClouds}>
+                            <option value="clear">Clear</option>
+                            <option value="partial">Partially Cloudy</option>
+                            <option value="cloudy">Cloudy</option>
+                        </select>
+                    </div>
                 </div>
-                <label htmlFor="precip">Rain chance: </label>
-                <div>
-                    <input 
-                        id="precip"
-                        type="checkbox"
-                        name="precip"
-                        value={precip}
-                        onChange={hanldePrecip}
-                    />
+                <div className="input">
+                    <label htmlFor="precip">Rain chance: </label>
+                    <div>
+                        <input 
+                            id="precip"
+                            type="checkbox"
+                            name="precip"
+                            value={precip}
+                            onChange={hanldePrecip}
+                        />
+                    </div>
                 </div>
-                <button type="submit">Add forecast</button>
+                <button type="submit" className="button">Add forecast</button>
             </form>
         </div>
     );
