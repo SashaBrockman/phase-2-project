@@ -62,13 +62,6 @@
       "temp": 32,
       "clouds": "clear",
       "precip": false
-    },
-    {
-      "id": "edcd",
-      "time": "4:00 p.m.",
-      "temp": "33",
-      "clouds": "cloudy",
-      "precip": true
     }
   ]
 }
