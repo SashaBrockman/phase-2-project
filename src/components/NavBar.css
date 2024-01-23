@@ -1,0 +1,20 @@
+.nav-bar{
+    background-color: #42f5ad;
+    padding: 2.5%;
+    border-color: black;
+    border-style: groove;
+}
+
+.nav-link{
+    text-align: center;
+    background-color: lightblue;
+    border-color: black;
+    border-style: groove;
+    padding: 1%;
+    margin: 0% 10%
+}
+
+.active{
+    border: black 5px;
+    border-style: groove;
+}
