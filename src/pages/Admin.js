@@ -58,7 +58,7 @@ function Admin(){
         <div>
             <h1>Admin</h1>
             <form onSubmit={handleSubmit}>
-                <label htmlFor="time">Time: </label>
+                <label htmlFor="time">Time {"(include a.m. or p.m.)"}: </label>
                 <div>
                     <input 
                         id="time"
@@ -68,7 +68,7 @@ function Admin(){
                         onChange={handleTime}
                     />
                 </div>
-                <label htmlFor="temp">Temperature: </label>
+                <label htmlFor="temp">Temperature {"(in degrees Fahrenheit)"}: </label>
                 <div>
                     <input
                         id="temp"
