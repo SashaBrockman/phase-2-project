@@ -1,0 +1,8 @@
+.current{
+    width: 50%;
+    margin: auto;
+    margin-top: 5%;
+    border-color: black;
+    border-style: groove;
+    background-color: #42f5ad;
+}
