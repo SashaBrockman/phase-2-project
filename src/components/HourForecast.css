@@ -1,0 +1,9 @@
+.hour{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    border-color: black;
+    border-style: groove;
+    background-color: #42f5ad;
+    width: 80%;
+    margin-left: 7%;
+}

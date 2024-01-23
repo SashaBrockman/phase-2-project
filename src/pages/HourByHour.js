@@ -13,7 +13,7 @@ function HourByHour(){
     })
 
     return(
-        <ul>
+        <ul style={{paddingTop: 20}}>
             {hourList}
         </ul>
     );
