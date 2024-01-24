@@ -1,5 +1,5 @@
 .admin-form{
-    width: 50%;
+    width: 30%;
     margin: auto;
     margin-top: 5%;
     border-color: black;
@@ -8,11 +8,14 @@
 }
 
 .input{
-    padding-left: 2%;
     padding-bottom: 5%;
+    width: 50%;
+    margin: auto;
+    text-align: center;
 }
 
 .button{
-    padding-left: 40%;
+    width: 20%;
+    margin: auto;
     padding-bottom: 5%;
 }

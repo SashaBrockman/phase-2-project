@@ -57,7 +57,7 @@ function Admin(){
 
     return(
         <div className="admin-form">
-            <h1 style={{textAlign: "center"}}>Add New Forecast</h1>
+            <h1 style={{textAlign: "center", paddingBottom: 20}}>Add New Forecast</h1>
             <form onSubmit={handleSubmit}>
                 <div className="input">
                     <label htmlFor="time">Time {"(include a.m. or p.m.)"}: </label>
@@ -107,7 +107,7 @@ function Admin(){
                     </div>
                 </div>
                 <div className="button">
-                    <button type="submit" >Add forecast</button>
+                    <button type="submit" style={{margin: 12}}>Add forecast</button>
                 </div>
             </form>
         </div>
