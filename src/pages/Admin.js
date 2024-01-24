@@ -78,6 +78,7 @@ function Admin(){
                             id="temp"
                             type="number"
                             name="temp"
+                            value={temp}
                             min={-10}
                             max={150}
                             onChange={handleTemp}
@@ -87,7 +88,7 @@ function Admin(){
                 <div className="input">
                     <label htmlFor="clouds">Cloud cover: </label>
                     <div>
-                        <select id="clouds" name="clouds" onChange={handleClouds}>
+                        <select id="clouds" name="clouds" value={clouds} onChange={handleClouds}>
                             <option value="clear">Clear</option>
                             <option value="partial">Partially Cloudy</option>
                             <option value="cloudy">Cloudy</option>
@@ -101,7 +102,7 @@ function Admin(){
                             id="precip"
                             type="checkbox"
                             name="precip"
-                            value={precip}
+                            checked={precip}
                             onChange={hanldePrecip}
                         />
                     </div>
