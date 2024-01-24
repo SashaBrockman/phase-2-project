@@ -1,70 +1,14 @@
-# Getting Started with Create React App
+# Weather Forecast App
+The Weather Forecast App by Sasha Brockman mimics a real forecast application. Features include showing a page of "current" weather conditions, a page of hour by hour forecasts, and a page that allows a user to add a new hour forecast to be displayed at the end of the pre-existing forecasts.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Installation
+The latest version of the Weather Forecast App can be found at https://github.com/SashaBrockman/phase-2-project.
 
-## Available Scripts
+## Use
+On load, the page will display a bar with links for navigating to other "pages". In reality, this is a single page application, and the links only determine which components are being shown. Along with this nav bar, the "current" weather conditions will be displayed, including time, temperature, cloud cover, and precipitation. This page can be returned to at any time by clicking the "Current Weather" link in the nav bar.
 
-In the project directory, you can run:
+A user can navigate to the hourly forecast page by clicking on the "Hourly Forecast" link at the top of the page. Doing so will show a list of forecasts currently in the database with information similar to that displayed in the "Current Weather" page. Instead of precipitation status, however, the forecast only displays the likelihood of rain. This page automatically updates when new forecasts are added.
 
-### `npm start`
+To add new forecasts, a user needs to click on the "Admin" link at the top of the page. Doing so will take the user to a form where the necessary information can be entered in. Each input is labeled as to what information is needed to be put in and is controlled via state. Upon clicking "Add forecast" at the bottom of the form, the internal database is updated with the new forecast, and the "Hourly Forecast" page is rerendered.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Lastly, in the event that a user tries to navigate to a bad link, there is a rudimentary Error Page that will be displayed requesting that the user return to a working page. This can be done via the back button in the browser or by using the nav bar available.
